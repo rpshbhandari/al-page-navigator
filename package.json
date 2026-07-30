@@ -7,7 +7,7 @@
     "url": "https://github.com/rpshbhandari/al-page-navigator"
   },
   "version": "0.1.0",
-  "publisher": "Rupesh Bhandari",
+  "publisher": "rpshbhandari",
   "icon": "images/icon-128.png",
   "engines": {
     "vscode": "^1.85.0"
