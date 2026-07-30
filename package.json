@@ -1,0 +1,49 @@
+{
+  "name": "al-page-navigator",
+  "displayName": "AL Page Navigator",
+  "description": "Inserts a ready-to-use Page Navigator list page into the current AL extension and assigns a free Page ID from your project's ranges.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-publisher-name/al-page-navigator"
+  },
+  "version": "0.1.0",
+  "publisher": "Rupesh Bhandari",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:alPageNavigator.insert"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "alPageNavigator.insert",
+        "title": "AL: Insert Page Navigator Page",
+        "category": "AL Page Navigator"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "alPageNavigator.insert",
+          "when": "explorerResourceIsFolder",
+          "group": "al"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^18.19.0",
+    "typescript": "^5.4.0"
+  }
+}
