@@ -4,10 +4,11 @@
   "description": "Inserts a ready-to-use Page Navigator list page into the current AL extension and assigns a free Page ID from your project's ranges.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-publisher-name/al-page-navigator"
+    "url": "https://github.com/rpshbhandari/al-page-navigator"
   },
   "version": "0.1.0",
   "publisher": "Rupesh Bhandari",
+  "icon": "images/icon-128.png",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -39,11 +40,13 @@
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
+    "icon:build": "node ./scripts/convert-icon.js",
     "watch": "tsc -watch -p ./"
   },
   "devDependencies": {
-    "@types/vscode": "^1.85.0",
     "@types/node": "^18.19.0",
+    "@types/vscode": "^1.85.0",
+    "sharp": "^0.35.3",
     "typescript": "^5.4.0"
   }
 }
