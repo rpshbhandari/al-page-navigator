@@ -17,6 +17,8 @@ project's configured ranges.
 
 - Install the extension from the VS Code Marketplace or load it from source in your development
   environment.
+- Or download the `.vsix` from [Releases](https://github.com/rpshbhandari/al-page-navigator/releases) and run
+  **Extensions: Install from VSIX...** in VS Code.
 
 ## Usage
 
